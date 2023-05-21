@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="16px" viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>424A82DC-B181-4937-86FA-4CFF50209AE5</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M2.1010545,7.74509935 C1.62040922,7.26445406 0.841129244,7.26445406 0.360483962,7.74509935 C-0.120161321,8.22574463 -0.120161321,9.0050246 0.360483962,9.48566988 L6.51433012,15.639516 C6.9949754,16.1201613 7.77425537,16.1201613 8.25490065,15.639516 L21.7933622,2.1010545 C22.2740075,1.62040922 22.2740075,0.841129244 21.7933622,0.360483962 C21.3127169,-0.120161321 20.5334369,-0.120161321 20.0527917,0.360483962 L7.38461538,13.0286602 L2.1010545,7.74509935 Z" id="path-1"></path>
+    </defs>
+    <g id="MOBILE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.2.2-New-Products-(Add-to-existing-list)" transform="translate(-20.000000, -76.000000)">
+            <g id="check" transform="translate(20.000000, 76.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#9DD8A0" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

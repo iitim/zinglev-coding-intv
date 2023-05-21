@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>0D7F4601-1DE2-492E-93D0-31E21F22CE66</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M8.10321469,3.42857143 L5.71827401,0.975489589 C5.50131607,0.752332851 5.50131607,0.390524292 5.71827401,0.167367554 C5.93523195,-0.0557891845 6.28699027,-0.0557891845 6.50394821,0.167367554 L9.83728155,3.59593898 C10.0542395,3.81909572 10.0542395,4.18090428 9.83728155,4.40406102 L6.50394821,7.83263245 C6.28699027,8.05578918 5.93523195,8.05578918 5.71827401,7.83263245 C5.50131607,7.60947571 5.50131607,7.24766715 5.71827401,7.02451041 L8.10321469,4.57142857 L0.555555556,4.57142857 C0.248730695,4.57142857 0,4.31559129 0,4 C0,3.68440871 0.248730695,3.42857143 0.555555556,3.42857143 L8.10321469,3.42857143 Z" id="path-1"></path>
+    </defs>
+    <g id="MOBILE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.2-Shop-Detail-Page-2" transform="translate(-20.000000, -86.000000)">
+            <g id="arrow-right" transform="translate(25.000000, 90.000000) scale(-1, 1) translate(-25.000000, -90.000000) translate(20.000000, 86.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#5EAFD3" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
