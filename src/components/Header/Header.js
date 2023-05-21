@@ -21,21 +21,6 @@ class Header extends React.Component {
     return (
       <Burger>
         <Menu />
-        <a id="home" className="menu-item" href="/">
-          Home
-        </a>
-        <Divider fitted />
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <Divider fitted />
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
-        <Divider fitted />
-        <a onClick={this.showSettings} className="menu-item--small" href="">
-          Settings
-        </a>
       </Burger>
     );
   }

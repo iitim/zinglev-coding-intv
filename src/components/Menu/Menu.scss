@@ -1,1 +1,130 @@
-/* todo: delete file if not needed */
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 20px;
+    height: 14px;
+    left: 20px;
+    top: 23px;
+    opacity: 0.5;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 15px;
+    width: 16px;
+    background-color: transparent;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #FFFFFF;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    background-color: transparent;
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    // padding: 2.5em 1.5em 0;
+    width: 251px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    background: #FFFFFF;
+    color: #b8b7ad;
+    padding: 20px
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "PingFang SC Medium";
+    background-color: transparent;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .menu-hr {
+    position: relative;
+    border: none;
+    margin: 0;
+    height: 1px;
+    background: rgba(82,87,100,0.1);
+  }
+
+  .menu-topic {
+    margin-top: 0;
+    height: 21px;
+    width: 216px;
+    color: #525764;
+    font-family: "PingFang SC";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+
+  .menu-desc {
+    height: 17px;
+    width: 216px;
+    color: rgba(82,87,100,0.5);
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 17px;
+  }
+
+  .menu-double-item {
+    display: inline-block;
+    padding-inline-end: 3em;
+  }
+
+  .menu-item {
+    margin: 9px 0px;
+    display: inline-block;
+    height: 17px;
+    color: #525764;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 17px;
+  }
+
+  .menu-signout {
+    margin: 9px 0px;
+    height: 13px;
+    width: 216px;
+    color: #5EAFD3;
+    font-family: "PingFang SC";
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
