@@ -1,25 +1,32 @@
 import React from "react";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import PropTypes from "prop-types";
 import styles from "./Menu.scss";
 
-import { MenuSingle } from "./MenuType";
+import { MenuSingle, MenuDouble } from "./MenuType";
 
 const Menu = (props) => (
   <Grid divided="vertically">
     <MenuSingle menuLoc="0" menuName="欢迎来到海宝店" />
     <MenuSingle menuLoc="1" menuName="商品分类" />
-
-    <Grid.Row columns={2}>
-      <Grid.Column className="menu-double-item">
-        <p className="menu-item">男性健康</p>
-      </Grid.Column>
-      <Grid.Column className="menu-double-item">
-        <p className="menu-item">女性保养</p>
-      </Grid.Column>
-      <hr class="menu-hr"></hr>
-    </Grid.Row>
-
+    <MenuDouble
+      menuDoubleInfo={[
+        { imgName: "man@2x", menuName: "男性健康" },
+        { imgName: "woman@2x", menuName: "女性保养" },
+      ]}
+    />
+    <MenuDouble
+      menuDoubleInfo={[
+        { imgName: "elderly@2x", menuName: "中老年健康" },
+        { imgName: "child@2x", menuName: "宝贝营养" },
+      ]}
+    />
+    <MenuDouble
+      menuDoubleInfo={[
+        { imgName: "skincare@2x", menuName: "护肤护理" },
+        { imgName: "milk@2x", menuName: "儿童成人奶粉" },
+      ]}
+    />
     <MenuSingle menuLoc="2" menuName="我的收藏表" />
     <MenuSingle menuLoc="2" menuName="我的过去参考价格" />
     <MenuSingle menuLoc="2" menuName="我的关注商店" />

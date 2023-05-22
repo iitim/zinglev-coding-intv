@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
 import PropTypes from "prop-types";
-import styles from "./Menu.scss";
 
 function MenuSingle({ menuLoc, menuName }) {
   const isDividerShown = menuLoc != 0;
@@ -13,24 +12,43 @@ function MenuSingle({ menuLoc, menuName }) {
   };
 
   return (
-    <Grid.Column>
-      <p className={classLoc[menuLoc]}>{menuName}</p>
+    <div>
+      <Grid.Column>
+        <p className={classLoc[menuLoc]}>{menuName}</p>
+      </Grid.Column>
       {isDividerShown ? <hr class="menu-hr"></hr> : null}
-    </Grid.Column>
+    </div>
   );
 }
 
-function MenuDouble() {
+function MenuDouble({ menuDoubleInfo }) {
+  function MenuElement({ imgName, menuName }) {
+    return (
+      <Grid.Column className="menu-double">
+        <img
+          className="menu-double-img"
+          src={process.env.PUBLIC_URL + `assets/img/Menu/${imgName}.png`}
+          alt=""
+        />
+        <p className="menu-double-item menu-item">{menuName}</p>
+      </Grid.Column>
+    );
+  }
   return (
-    <Grid.Row columns={2}>
-      <Grid.Column className="menu-double-item">
-        <p className="menu-item">男性健康</p>
-      </Grid.Column>
-      <Grid.Column className="menu-double-item">
-        <p className="menu-item">女性保养</p>
-      </Grid.Column>
-      <hr class="menu-hr"></hr>
-    </Grid.Row>
+    <div className="menu-group">
+      <Grid.Row style={{ display: "inline-flex" }} columns={2}>
+        <MenuElement
+          imgName={menuDoubleInfo[0].imgName}
+          menuName={menuDoubleInfo[0].menuName}
+        />
+        <div style={{ width: "1em" }}></div>
+        <MenuElement
+          imgName={menuDoubleInfo[1].imgName}
+          menuName={menuDoubleInfo[1].menuName}
+        />
+      </Grid.Row>
+      <hr className="menu-hr"></hr>
+    </div>
   );
 }
 
@@ -39,8 +57,13 @@ MenuSingle.propTypes = {
   menuName: PropTypes.string.isRequired,
 };
 
-const MenuDoublePropTypes = {
-  // always use prop types!
+MenuDouble.propTypes = {
+  menuDoubleInfo: PropTypes.arrayOf(
+    PropTypes.shape({
+      imgName: PropTypes.string.isRequired,
+      menuName: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export { MenuSingle, MenuDouble };
