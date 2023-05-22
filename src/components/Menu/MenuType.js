@@ -35,8 +35,11 @@ function MenuDouble({ menuDoubleInfo }) {
     );
   }
   return (
-    <div className="menu-group">
-      <Grid.Row style={{ display: "inline-flex" }} columns={2}>
+    <div>
+      <Grid.Row
+        style={{ display: "inline-flex", margin: "4px 0px" }}
+        columns={2}
+      >
         <MenuElement
           imgName={menuDoubleInfo[0].imgName}
           menuName={menuDoubleInfo[0].menuName}

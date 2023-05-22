@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
-import PropTypes from "prop-types";
 import styles from "./Menu.scss";
 
 import { MenuSingle, MenuDouble } from "./MenuType";
@@ -34,11 +33,5 @@ const Menu = (props) => (
     <MenuSingle menuLoc="3" menuName="安全登出" />
   </Grid>
 );
-
-const MenuPropTypes = {
-  // always use prop types!
-};
-
-Menu.propTypes = MenuPropTypes;
 
 export default Menu;

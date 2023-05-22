@@ -56,15 +56,12 @@
   padding: 20px;
 }
 
-/* Individual item */
 .bm-item {
   display: inline-block;
   font-size: 12px;
   font-family: "PingFang SC Medium";
-  background-color: transparent;
 }
 
-/* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -98,10 +95,6 @@
   font-weight: 500;
   letter-spacing: 0;
   line-height: 17px;
-}
-
-.menu-group {
-  margin: 9px 0px;
 }
 
 .menu-double {
