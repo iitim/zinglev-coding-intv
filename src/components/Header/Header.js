@@ -1,10 +1,10 @@
 import React from "react";
 import { slide as Burger } from "react-burger-menu";
-import { Divider, Grid } from "semantic-ui-react";
 import PropTypes from "prop-types";
 import styles from "./Header.scss";
 
 import Menu from "../Menu/Menu";
+import Searchbar from "./Searchbar";
 
 // const Header = props => (
 // 	<div>This is a component called Header.</div>
@@ -14,14 +14,12 @@ import Menu from "../Menu/Menu";
 // write your component in functional form as above and delete
 // this section.
 class Header extends React.Component {
-  showSettings(event) {
-    event.preventDefault();
-  }
   render() {
     return (
-      <Burger>
-        <Menu />
-      </Burger>
+      // <Burger>
+      //   <Menu />
+      // </Burger>
+      <Searchbar />
     );
   }
 }
