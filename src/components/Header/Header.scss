@@ -3,7 +3,7 @@
   height: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: auto;
 }
@@ -11,6 +11,7 @@
 .nav-search-container {
   position: relative;
   width: 195px;
+  top: 10%;
   border-color: #d8d8d8;
   border-radius: 3px;
   border: 1px solid transparent;
