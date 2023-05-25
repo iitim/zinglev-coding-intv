@@ -16,10 +16,12 @@ import Searchbar from "./Searchbar";
 class Header extends React.Component {
   render() {
     return (
-      // <Burger>
-      //   <Menu />
-      // </Burger>
-      <Searchbar />
+      <div className="header">
+        <Burger styles={{ flex: 1 }}>
+          <Menu />
+        </Burger>
+        <Searchbar styles={{ flex: 1 }} />
+      </div>
     );
   }
 }

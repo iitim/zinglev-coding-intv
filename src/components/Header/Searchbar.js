@@ -4,9 +4,12 @@ import PropTypes from "prop-types";
 
 const Searchbar = (props) => (
   <div className="nav-search-container">
-    <input className="nav-search-input" />
+    <input className="nav-search-input" placeholder="产品/商店 搜寻" />
     <button className="nav-search-icon">
-      <AiOutlineSearch size={22} />
+      <AiOutlineSearch
+        fill="#23DAC6"
+        style={{ height: "17px", width: "17px" }}
+      />
     </button>
   </div>
 );
