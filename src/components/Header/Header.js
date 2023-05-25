@@ -16,15 +16,20 @@ import Searchbar from "./Searchbar";
 class Header extends React.Component {
   render() {
     return (
-      <div>
-        <div>
-          <Burger>
-            <Menu />
-          </Burger>
-        </div>
-        <div className="header">
-          <Searchbar />
-        </div>
+      <div className="header">
+        <Burger>
+          <Menu />
+        </Burger>
+        <img
+          className="header-logo"
+          src={
+            process.env.PUBLIC_URL +
+            "assets/img/3.0 Main Page/price cart logo@2x.jpg"
+          }
+          alt=""
+        />
+
+        <Searchbar />
       </div>
     );
   }

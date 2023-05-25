@@ -2,10 +2,20 @@
   background: #ffffff;
   height: 60px;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
+  // padding: 10px;
   width: auto;
+}
+
+.header-logo {
+  position: relative;
+  height: 32px;
+  width: 26px;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-search-container {
@@ -43,8 +53,7 @@
 .nav-search-icon {
   position: absolute;
   right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20%;
   border: none;
   z-index: 1;
   cursor: pointer;
