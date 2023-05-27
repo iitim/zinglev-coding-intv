@@ -1,1 +1,13 @@
-/* todo: delete file if not needed */
+.plain-nav {
+  background: #ffffff;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.plain-nav-logo {
+  position: relative;
+  height: 32px;
+  width: 26px;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { slide as Burger } from "react-burger-menu";
 import { FiUser } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./Header.scss";
 
@@ -24,8 +25,9 @@ class Header extends React.Component {
         />
 
         <Searchbar />
-
-        <FiUser color="#23DAC6" className="nav-user" />
+        <Link to="/login">
+          <FiUser color="#23DAC6" className="nav-user" />
+        </Link>
       </div>
     );
   }
