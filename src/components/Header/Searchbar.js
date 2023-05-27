@@ -7,8 +7,8 @@ const Searchbar = (props) => (
     <input className="nav-search-input" placeholder="产品/商店 搜寻" />
     <button className="nav-search-icon">
       <AiOutlineSearch
-        fill="#23DAC6"
-        style={{ height: "17px", width: "17px" }}
+        color="#23DAC6"
+        style={{ height: "20px", width: "20px" }}
       />
     </button>
   </div>

@@ -1,27 +1,21 @@
 import React from "react";
 import { slide as Burger } from "react-burger-menu";
+import { FiUser } from "react-icons/fi";
 import PropTypes from "prop-types";
 import styles from "./Header.scss";
 
 import Menu from "../Menu/Menu";
 import Searchbar from "./Searchbar";
 
-// const Header = props => (
-// 	<div>This is a component called Header.</div>
-// );
-
-// todo: Unless you need to use lifecycle methods or local state,
-// write your component in functional form as above and delete
-// this section.
 class Header extends React.Component {
   render() {
     return (
-      <div className="header">
+      <div className="nav">
         <Burger>
           <Menu />
         </Burger>
         <img
-          className="header-logo"
+          className="nav-logo"
           src={
             process.env.PUBLIC_URL +
             "assets/img/3.0 Main Page/price cart logo@2x.jpg"
@@ -30,6 +24,8 @@ class Header extends React.Component {
         />
 
         <Searchbar />
+
+        <FiUser color="#23DAC6" className="nav-user" />
       </div>
     );
   }
