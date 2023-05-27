@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Number of product cards to show at a time
+    slidesToShow: 3,
     slidesToScroll: 1,
   };
 
