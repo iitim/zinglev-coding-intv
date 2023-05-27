@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import styles from "./UserAccount.scss";
 
+import Login from "./Login";
+
 const UserAccount = (props) => (
   <div>
     <Helmet bodyAttributes={{ style: "background-color : #f8f8f8" }} />
@@ -16,6 +18,7 @@ const UserAccount = (props) => (
         alt=""
       />
     </div>
+    <Login />
   </div>
 );
 
