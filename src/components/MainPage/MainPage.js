@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 import styles from "./MainPage.scss";
 
 import Header from "../Header/Header";
@@ -34,7 +35,8 @@ const productCards = [
 ];
 
 const MainPage = (props) => (
-  <div className="mainpage">
+  <div>
+    <Helmet bodyAttributes={{ style: "background-color : #f8f8f8" }} />
     <Header />
     <Slider />
     <ProductCard product={productCards} />
