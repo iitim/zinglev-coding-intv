@@ -5,6 +5,7 @@ import styles from "./MainPage.scss";
 import Header from "../Header/Header";
 import Slider from "./Slider";
 import ProductCard from "./ProductCard";
+import Footer from "../Footer/Footer";
 
 const imgRoot = process.env.PUBLIC_URL + "assets/img/";
 const productCards = [
@@ -40,6 +41,7 @@ const MainPage = (props) => (
     <Header />
     <Slider />
     <ProductCard product={productCards} />
+    <Footer />
   </div>
 );
 
