@@ -3,56 +3,14 @@ import Helmet from "react-helmet";
 import styles from "./Calculation.scss";
 
 import Header from "../Header/Header";
+import ProductCard from "./ProductCard";
 import Footer from "../Footer/Footer";
-
-const ProductCard = ({ product }) => {
-  const [quantity, setQuantity] = useState(1);
-
-  const decreaseQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-
-  const increaseQuantity = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const removeProduct = () => {
-    // Logic to remove the product from the cart or perform other actions
-  };
-
-  return (
-    <div className="cal-product-card">
-      <div className="cal-product-image">
-        <img src={product.image} alt={product.name} />
-        <button className="cal-remove-button" onClick={removeProduct}>
-          Remove
-        </button>
-      </div>
-      <div className="cal-product-details">
-        <h3>
-          {product.brand}
-          <br />
-          {product.name}
-          <br />
-          {product.quantity}
-        </h3>
-        <p>AU{product.price}</p>
-        <div className="cal-quantity-control">
-          <button onClick={decreaseQuantity}>-</button>
-          <span>{quantity}</span>
-          <button onClick={increaseQuantity}>+</button>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const Calculation = () => {
   const imgPath = process.env.PUBLIC_URL + "assets/img/5.0 Calculation/";
-  const products = [
+  const [products, setProducts] = useState([
     {
+      id: 1,
       brand: "Nature’s Way",
       name: "Odourless Fish Oil",
       quantity: "2000mg 200",
@@ -60,6 +18,7 @@ const Calculation = () => {
       image: imgPath + "Odourless Fish Oil.png",
     },
     {
+      id: 2,
       brand: "Bio Island",
       name: "DHA for Kids",
       quantity: "100mg 60",
@@ -67,16 +26,20 @@ const Calculation = () => {
       image: imgPath + "DHA for Kids.png",
     },
     {
+      id: 3,
       brand: "Nature’s Way",
       name: "Kids Smart Calcium",
       quantity: "400mg 100",
       price: "$10.00 - $14.00",
       image: imgPath + "Kids Smart Calcium.png",
     },
-  ];
+  ]);
 
-  const handleAddToCart = () => {
-    // Logic to add products to the cart or perform other actions
+  const handleRemoveProduct = (productId) => {
+    const updatedProducts = products.filter(
+      (product) => product.id !== productId
+    );
+    setProducts(updatedProducts);
   };
 
   return (
@@ -86,11 +49,13 @@ const Calculation = () => {
       <h1 className="cal-topic">收藏表 “阿姨要”</h1>
       <div className="cal-product-list">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard
+            key={product.id}
+            product={product}
+            onRemove={handleRemoveProduct}
+          />
         ))}
-        <button className="cal-add-to-cart-button" onClick={handleAddToCart}>
-          Add to Cart
-        </button>
+        <button className="cal-best-price-button">显示合并价格</button>
       </div>
       <Footer />
     </div>
